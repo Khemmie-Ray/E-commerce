@@ -27,15 +27,15 @@ const Content = () => {
         <h1 className="text-[3rem] font-[700] my-4">Fall Limited Edition Sneakers</h1>
         <p className="text-[hsl(220,14%,75%)]">These low-profile sneakers are your perfect casual wear companion. Featuring a durable rubber outer sole, they’ll withstand everything the weather can offer
         </p>
-        <p>$125.00 <span>50%</span></p>
-        <p>$250.00</p>
-        <div className="flex items-center flex-col lg:flex-row md:flex-row">
-            <div className="flex items-center bg-[hsl(223,64%,98%)] px-4 py-2 justify-between">
+        <p className="font-[700] text-[1.8rem] my-4">$125.00 <span className="text-[hsl(26,100%,55%)] text-[.8rem] bg-[hsl(223,64%,98%)] rounded-md p-2 ml-2">50%</span></p>
+        <p className="text-[hsl(220,14%,75%)] font-[700] line-through">$250.00</p>
+        <div className="flex items-center flex-col lg:flex-row md:flex-row justify-between mt-4">
+            <div className="flex items-center bg-[hsl(223,64%,98%)] p-4 justify-between mr-4 lg:w-2/6 md:w-2/6 w-[100%] rounded-lg">
             <img src={minusIcon} alt="" onClick={handleDecreases}/>
-            <p>{itemNum}</p>
+            <p className="font-[700] text-[1.1rem]">{itemNum}</p>
             <img src={plusIcon} alt="" onClick={handleIncreases}/>
             </div>
-           <button className="bg-[hsl(26,100%,55%)] flex"><img src={cartIcon} alt="" /> Add to Cart</button>
+           <button className="bg-[hsl(26,100%,55%)] flex lg:w-4/6 md:w-4/6 w-[100%] items-center justify-center p-4 text-white rounded-lg"><img src={cartIcon} alt="" className="mr-2"/> Add to Cart</button>
         </div>
         </div>
     </main>
